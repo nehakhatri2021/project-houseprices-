@@ -6,12 +6,12 @@ import pickle
 app = Flask(__name__)
 model = pickle.load(open('assignment2.pkl','rb')) 
 
-@app.route('/')           # url with run with"/""
+@app.route('/')           
 def home():
   
-    return render_template("index.html")   #will make the func return to html page
+    return render_template("index.html")   
   
-@app.route('/predict',methods=['GET'])   #url will look for "/predict" to run
+@app.route('/predict',methods=['GET'])   
 def predict():
     
     
