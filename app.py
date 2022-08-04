@@ -4,7 +4,7 @@ import pickle
 
 
 app = Flask(__name__)
-model = pickle.load(open('assisgnment2.pkl','rb')) 
+model = pickle.load(open('assignment2.pkl','rb')) 
 
 @app.route('/')           # url with run with"/""
 def home():
